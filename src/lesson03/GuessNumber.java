@@ -45,5 +45,11 @@ public class GuessNumber {
             System.out.println("попробуйте ввести число больше");
             guessNumber(result);
         }
+//        } else {
+//            String s = x > result ? "меньше" : "больше";
+//            System.out.println("попробуйте ввести число " + s);
+        System.out.println("попробуйте ввести число " + (x > result ? "меньше" : "больше"));
+//            guessNumber(result);
+//        }
     }
 }

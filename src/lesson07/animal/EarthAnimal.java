@@ -1,6 +1,8 @@
 package lesson07.animal;
 
-public abstract class EarthAnimal extends Animal {
+import lesson08.Runnable;
+
+public abstract class EarthAnimal extends Animal implements Runnable {
 
     public EarthAnimal(int age, String name, double weight, boolean male) {
         super(age, name, weight, male);

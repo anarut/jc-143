@@ -13,6 +13,10 @@ public abstract class Fish extends Animal {
         this.scale = scale;
     }
 
+//    public Fish() {
+//        super(14, "saa", 2, true);
+//    }
+
     public void swim() {
         System.out.println("I can swim");
     }
@@ -24,6 +28,15 @@ public abstract class Fish extends Animal {
 
     @Override
     public void breath() {
-        System.out.println("under water no air");
+        if (scale) {
+            System.out.println("under water no air");
+        } else {
+//            Animal animal = super;
+            super.breath();
+//            this.breath();
+//            breath();
+//            Fish fish = this;
+//            System.out.println("... fresh air");
+        }
     }
 }

@@ -1,11 +1,11 @@
 package lesson07.animal;
 
-public abstract class Animal extends Object {
+public abstract class Animal {
 
-    int age;
-    String name;
-    double weight;
-    boolean male;
+    private int age;
+    private String name;
+    private double weight;
+    private boolean male;
 
 //    public Animal() {
 //    }
@@ -30,4 +30,39 @@ public abstract class Animal extends Object {
 
     public abstract void eat();
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        } else {
+            //error
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public boolean isMale() {
+        return male;
+    }
+
+    public void setMale(boolean male) {
+        this.male = male;
+    }
 }

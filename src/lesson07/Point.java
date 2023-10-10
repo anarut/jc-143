@@ -15,6 +15,7 @@ public class Point extends Object {
     }
 
     public Point(int x, int y) {
+//        super();
         this.x = x;
         this.y = y;
         System.out.println("point created");

@@ -23,7 +23,10 @@ public class Robot implements Runnable {
     }
 
     public void fly() {
-        System.out.println("fly into the sky");
+        System.out.println("fly into the space");
     }
 
+    public void fly2() {
+        System.out.println("fly into the sky");
+    }
 }

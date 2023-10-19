@@ -8,6 +8,9 @@ public class GenericAccount<T, K extends Number> {
     private String owner;
     private K amount;
 
+    public GenericAccount() {
+    }
+
     public GenericAccount(T id, String owner, K amount) {
         Class<?> aClass = id.getClass();
         if (!(id instanceof Double || aClass.equals(Float.class))) {

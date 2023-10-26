@@ -21,6 +21,6 @@ public class Main2 {
         System.out.println(numbers);
 
         Set<Integer> objects = new TreeSet<>();
-        objects.add()
+        objects.add(1);
     }
 }

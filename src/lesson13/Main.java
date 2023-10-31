@@ -35,8 +35,8 @@ public class Main {
             System.out.println(entry.getValue());
         }
 
-        String str = "sadfusdgfjhadshlkfhsdkugfkudshfkjdgfkjdgfuyerfhjhfgsydukf";
-        HashMap<Character, Integer> hashMap = new HashMap<>();
+        String str = "sadfushdgfjhadshlkfhsdkugfhkudshfkjdgfkjdgfuyehrfhjhfghsydukf";
+        Map<Character, Integer> hashMap = new HashMap<>();
 
         for (char c : str.toCharArray()) {
 //            hashMap.putIfAbsent(c, 0);

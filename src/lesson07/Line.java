@@ -15,8 +15,8 @@ public class Line {
     }
 
     public double length() {
-        int a = endPoint.x - startPoint.x;
-        int b = endPoint.y - startPoint.y;
+        int a = endPoint.getX() - startPoint.getX();
+        int b = endPoint.getY() - startPoint.getY();
         return Math.sqrt(a * a + b * b);
     }
 

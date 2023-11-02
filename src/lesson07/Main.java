@@ -6,7 +6,7 @@ public class Main {
         Point point = new Point(1, 1);
 
 //        Main main = new Main();
-        System.out.println(point.x + " " + point.y);
+        System.out.println(point.getX() + " " + point.getY());
 
         Line line = new Line(point, new Point(4, 5));
         Line line2 = new Line(point, new Point(10, 12));
@@ -15,7 +15,7 @@ public class Main {
         System.out.println(line);
         System.out.println(line2);
 
-        point.x = 2;
+        point.setX(2);
         line.startPoint = new Point(1, 1);
 
         System.out.println(point);

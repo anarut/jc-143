@@ -1,9 +1,18 @@
 package lesson07;
 
+import java.util.Comparator;
+
 public class Point implements Comparable<Point> {
 
     private int x;
     private int y;
+
+
+    private Comparator<Point> comparator;
+
+    public Point(Comparator<Point> comparator) {
+        this.comparator = comparator;
+    }
 
     public Point(double jkgasdfjkasdfjkhasdf, double sdjkhjkhasdfjkasfy) {
         x = (int) jkgasdfjkasdfjkhasdf;

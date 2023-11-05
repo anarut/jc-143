@@ -46,10 +46,18 @@ public class GuessNumber {
         int a1 = a;
         int b1 = b;
 
-        System.out.println("введите число от 1 до 100:");
-
+        int x;
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
+        for (;;) {
+            System.out.println("введите число от 1 до 100:");
+            try {
+                x = scanner.nextInt();
+                break;
+            } catch (Exception e) {
+                scanner.next();
+                System.out.println("Hе удалось распознать число. Попробуйте еще раз");
+            }
+        }
 
         System.out.println("вы ввели число " + x);
 

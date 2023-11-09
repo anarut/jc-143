@@ -33,7 +33,7 @@ public class ExceptionMain {
             System.out.println("не знаю -" + exxx.getMessage());
             return 1;
         } catch (Throwable ignored) {
-
+            ignored.printStackTrace();
         } finally {
             System.out.println("finish!!!");
         }

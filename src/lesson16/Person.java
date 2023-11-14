@@ -6,8 +6,9 @@ public class Person implements Serializable {
 
     public static final long serialVersionUID = 1L;
 
+    public static int a = 5;
     private String username;
-    private String password;
+    private transient String password;
     private Integer age;
 
     public Person(String username, String password) {
@@ -39,6 +40,19 @@ public class Person implements Serializable {
         this.age = age;
     }
 
+    public int howAreYou() {
+        if (age < 10) {
+            return 8;
+        } else if (age > 30) {
+            return 3;
+        } else if (password.length() < 5) {
+            return 10;
+        } else if (username.length() > 15){
+            return 2;
+        } else {
+            return 5;
+        }
+    }
 
     @Override
     public String toString() {

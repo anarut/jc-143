@@ -67,6 +67,8 @@ public class LambdaMain {
                 return new Point(-a1, -b1);
             }
         };
+
+        PointOp newP2 = (x, y) -> new Point(x, y);
         PointOp newP1 = Point::new;
 
 

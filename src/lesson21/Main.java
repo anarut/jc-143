@@ -23,7 +23,6 @@ public class Main {
                 System.out.println(n);
                 o.writeInt(n);
             }
-
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
@@ -60,5 +59,11 @@ public class Main {
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
+
+        String file = "file.txt";
+        try (     BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"))){
+            String currentLine = reader.readLine();
+        }
+
     }
 }

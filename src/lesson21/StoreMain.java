@@ -20,4 +20,22 @@ public class StoreMain {
 
         runnables.forEach(r -> new Thread(r).start());
     }
+
+    class Wrapper {
+        Integer a;
+        String b;
+
+        public Wrapper(Integer a, String b) {
+            this.a = a;
+            this.b = b;
+        }
+    }
+    public <K> K blabla(K item) {
+
+        Integer a = 1;
+        String b = "b";
+
+        new Wrapper(a, b);
+        return item;
+    }
 }
